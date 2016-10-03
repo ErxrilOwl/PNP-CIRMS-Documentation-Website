@@ -1,0 +1,485 @@
+*{
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	position: relative;
+}
+
+.col{
+	float: left;
+}
+
+.col-3, .col-h-1{
+	width: 25%;
+}
+
+.col-9, .col-h-2{
+	width: 75%;
+}
+
+.col-3, .col-9{
+	height: 100vh;
+}
+
+.col-h-1, .col-h-2{
+	height: 10vh;
+} 
+
+.col-3{
+	top: 0px;
+	left: 0px;
+}
+
+.col-9{
+	background-color: #5BBBFA;
+	height: 200vh;
+}
+
+.header{
+	width: 100%;
+	height: 20vh;	
+}
+
+hr{
+	border-color: lightgray;
+}
+
+.fix-side{
+	position: fixed;
+	width: 25%;
+	height: 100vh;
+	padding: 10px;
+}
+
+.col-h-1 img{
+	margin-top: 10px;
+	margin-left: 15px;
+	height: 8vh;
+	width: 50px;
+}
+
+.col-h-2{
+	padding: 15px 0px;
+}
+
+.col-h-2 h1, li{
+	color: #272727;
+	font-size: 1.2em;
+	font-weight: 50%;
+	color: #1B81C5   ;
+}
+
+.footer .col-h-1 h1{
+	font-size: 1em;
+}
+
+.footer .col{
+	float: left;
+}
+
+.footer .col-h-1{
+	color: gray;
+	padding-top: 26px;
+	padding-right: 5px;
+	text-align: right;
+	width: 80%;
+}
+
+.footer .col-h-2 img{
+	height: 40px;
+	width: 40px;
+}
+
+.footer .col-h-2{
+	width: 20%;
+}
+
+.menu{
+	font-family: sans-serif;
+	padding: 10px 20px;
+	height: 60vh;
+}
+
+.footer{
+	width: 100%;
+	height: 10vh;
+}
+
+/*.btn-link{
+	width: 100%;
+	background-color: white;
+	border: none;
+	padding: 20px 50px;
+	font-size: 1.3em;
+	text-align: left;
+	border-top: 1px solid gray;
+	color: dodgerblue;
+	transition: color 0.5s ease;
+}
+
+.btn-link:hover{
+	background-color: dodgerblue;
+	color: white;
+}*/
+
+.btn-link {
+	width: 100%;
+	background-color: white;
+	border: none;
+	padding: 20px 50px;
+	font-size: 1.3em;
+	text-align: left;
+	border-top: 1px solid gray;
+	color: dodgerblue;
+	transition: color 0.5s ease;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+.btn-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+  color: white;
+}
+.btn-link:hover:before, .btn-link:focus:before, .btn-link:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.btn-link:nth-child(4){	
+	border-bottom: 1px solid gray;	
+}
+
+.block{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+/*************************************** Block 1 **************************************************/
+
+.block-1{
+	background-image: url("../images/bg-4.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh; 
+}
+
+.block-1 .header{
+	position: absolute;
+	top: 0;
+	color: white;
+	width: 100%;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 15vh;
+	text-align: center;
+	background-color: rgba(51, 172, 255, 0.8);
+}
+
+.block-1 .content{
+	position: absolute;
+	top: 45vh;
+	right: 0;
+	width: 50%;
+	padding: 40px;
+	font-color: darkgray;
+	background-color: rgba(255,255,255, 0.8);
+	font-size: 1.2em;
+	text-align: right;
+	border-radius: 50px 0 0 50px;
+}
+
+.block-1 .content a{
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+/*************************************** End of Block 1 **************************************************/
+
+/****************************************** Block 2 ******************************************************/
+
+.block-2{
+	background-color: dodgerblue;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 180vh; 
+    position: relative;
+}
+
+
+.block-2 .header{
+	position: absolute;
+	top: 0;
+	font-size: 1.3em;
+	text-shadow: 3px 3px 1px gray;
+	color: white;
+	width: 100%;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 15vh;
+	text-align: center;
+}
+
+.header hr{
+	margin: 0 10%;
+	border: 2px solid white;
+	border-radius: 50%;
+	text-shadow: 3px 3px 1px gray;
+}
+
+.block-2 .content{
+	position: absolute;
+	top: 15vh;
+	right: 0;
+	width: 100%;
+	height: 90vh;
+	font-color: dodgerblue;
+	font-size: 1.2em;
+	text-align: right;
+}
+
+.col-4{
+	width: 33.33%;
+	height: 40vh;
+	padding: 40px;
+}
+
+.col-4 .sec-links button {
+	background-color: white;
+	width: 100%;
+	height: 30vh;
+	margin-bottom: 20px;
+	border:none;
+	font-size: 1.4em;
+	color: dodgerblue;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px gray;	
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.col-4 .sec-links button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #106EAD;
+  border-radius: 10px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.col-4 .sec-links button:hover, .col-4 .sec-links button:focus, .col-4 .sec-links button:active {
+  color: white;
+}
+.col-4 .sec-links button:hover:before, .col-4 .sec-links button:focus:before, .col-4 .sec-links button:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/****************************************** Block 3 ******************************************************/
+
+.block-3{
+	background-image: url("../images/bg-1.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh; 
+    position: relative;
+    padding: 10%;
+}
+
+.block-3 .content{
+	background-color: rgba(255,255,255, 0.8);
+	width: 65%;
+	height: 60vh;
+	margin: auto;
+	padding: 45px 30px;
+	text-align: justify;
+	font-size: 1.1em;
+	border-radius: 10px;
+
+}
+
+
+/****************************************** End of Block 3 ******************************************************/
+
+/****************************************** Block 4 ******************************************************/
+
+.block-4{
+	background-color: dodgerblue;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600vh; 
+    position: relative;
+    padding: 8%;
+}
+
+
+
+.block-4 .header h1{
+	position: absolute;
+	top: 1%;
+	color: dodgerblue;
+	width: 85%;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 12vh;
+	text-align: center;
+	background-color: white;
+	box-shadow: 2px 2px 2px black;
+	font-size: 1.8em;
+	margin-top: 20px;
+}
+
+
+.block-4 .content{
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 30vh;
+	text-align: justify;
+	font-size: 1.1em;
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+}
+
+.block-4 .content:hover{
+	box-shadow: 5px 5px 5px black;
+}
+
+.block-4 .content .col-3, .block-4 .content .col-9{
+	background-color: #FFFFFF;
+	float: left;
+	width: 30%;
+	height: 26vh;
+}
+
+.block-4 .content .col-3 img{
+	width: 100%;
+	height: 100%;
+}
+
+.block-4 .content .col-9{
+	width: 70%;
+	padding: 10px;
+	color: black;
+}
+
+
+/****************************************** End of Block 4 ******************************************************/
+
+/********************************************* Block 5  ********************************************************/
+
+.block-5{
+	background: url('../images/bg-2.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh; 
+    position: relative;
+    padding-top: 5%;
+}
+
+
+.block-5 .content{
+	background-color: rgba(255,255,255,0.8);
+	width: 80%;
+	height: 80vh;
+	text-align: justify;
+	font-size: 1.1em;
+	border-radius: 10px;
+	padding: 40px;
+	position: relative;	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.block-5 .content .header{
+	width: 100%;
+	font-size: 1em;
+	color: dodgerblue;
+}
+
+
+/********************************************** End of Block 5  *****************************************************/
+
+/************************************************* Block 6  *****************************************************/
+
+.block-5{
+	background: url('../images/bg-3.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh; 
+    position: relative;
+    padding-top: 5%;
+}
+
+/********************************************** End of Block 6  *****************************************************/
